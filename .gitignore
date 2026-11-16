@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# Database
+backend/data/*.db
+backend/data/*.sqlite*
+
+# Uploaded and generated images
+backend/uploads/*
+backend/outputs/*
+
+# Model checkpoints (host separately)
+*.pth
+*.pt
+
+# Datasets
+*.zip
+stage1_train/
+stage1_test/
+stage2_test_final/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+
+# Deployment environment
+.venv-deploy/
+
+# Python
+__pycache__/
+*.pyc
+
+# Model checkpoints
+*.pth
+*.pt
+
+# Local data
+backend/data/
+backend/uploads/
+backend/outputs/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

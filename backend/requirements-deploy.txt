@@ -1,0 +1,14 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.34,<1.0
+python-multipart>=0.0.20
+numpy>=1.26,<2.0
+pandas>=2.2,<3.0
+SQLAlchemy>=2.0,<3.0
+torch>=2.6,<3.0
+segmentation-models-pytorch>=0.5,<1.0
+opencv-python-headless>=4.10
+scipy>=1.13,<2.0
+scikit-image>=0.24,<1.0
+scikit-learn>=1.5,<2.0
+Pillow>=11.0
+python-dotenv>=1.0
