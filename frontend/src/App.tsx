@@ -381,9 +381,9 @@ export default function App() {
         </section>
 
         <section className="scope">
-          <ImagePanel title="Original" src={`/api/dashboard/analysis/${selected}/image`} />
-          <ImagePanel title="Binary mask" src={`/api/dashboard/analysis/${selected}/mask`} />
-          <ImagePanel title="Instance overlay" src={`/api/dashboard/analysis/${selected}/overlay`} />
+          <ImagePanel title="Original" src={`/api/api/dashboard/analysis/${selected}/image`} />
+          <ImagePanel title="Binary mask" src={`/api/api/dashboard/analysis/${selected}/mask`} />
+          <ImagePanel title="Instance overlay" src={`/api/api/dashboard/analysis/${selected}/overlay`} />
         </section>
 
         <section className="kpis">
