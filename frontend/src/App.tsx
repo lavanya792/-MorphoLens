@@ -7,7 +7,7 @@ import {
 } from "recharts";
 
 /* ───────────────────────── API (unchanged) ───────────────────────── */
-const API = "https://lavanya213-morpholens-backend.hf.space";
+const API = "https://lavanya213-morpholens-backend.hf.space/api";
 
 type Page = "overview" | "analysis" | "anomalies";
 type Tab = "morpho" | "dist" | "corr" | "spatial" | "table";
@@ -137,7 +137,7 @@ export default function App() {
   const [showImage, setShowImage] = useState(true);
 
   async function refresh(preferred?: number) {
-    const [a] = await Promise.all([axios.get(`${API}/api/dashboard/analyses`)]);
+    const [a] = await Promise.all([axios.get(`${API}/api/api/dashboard/analyses`)]);
     const list: Analysis[] = a.data;
     setAnalyses(list);
     const id = preferred ?? selected ?? list[0]?.analysis_id ?? null;
