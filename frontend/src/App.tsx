@@ -7,7 +7,7 @@ import {
 } from "recharts";
 
 /* ───────────────────────── API (unchanged) ───────────────────────── */
-const API = "https://lavanya213-morpholens-backend.hf.space/api";
+const API = "https://lavanya213-morpholens-backend.hf.space";
 
 type Page = "overview" | "analysis" | "anomalies";
 type Tab = "morpho" | "dist" | "corr" | "spatial" | "table";
