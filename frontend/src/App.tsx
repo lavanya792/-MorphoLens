@@ -7,7 +7,7 @@ import {
 } from "recharts";
 
 /* ───────────────────────── API (unchanged) ───────────────────────── */
-const API = "http://127.0.0.1:8000";
+const API = "https://lavanya213-morpholens-backend.hf.space";
 
 type Page = "overview" | "analysis" | "anomalies";
 type Tab = "morpho" | "dist" | "corr" | "spatial" | "table";
