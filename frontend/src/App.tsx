@@ -162,7 +162,7 @@ export default function App() {
       const r = await axios.post(`${API}/api/api/upload/analyze`, form, { headers: { "Content-Type": "multipart/form-data" } });
       const id: number = r.data.analysis_id;
       setStage(2); setMessage(`Segmentation complete: ${r.data.total_nuclei} nuclei. Running analytics…`);
-      await axios.post(`${API}/api/analytics/run/${id}`);
+      await axios.post(`${API}/api/api/analytics/run/${id}`);
       await refresh(id); setPage("analysis");
       setStage(3); setMessage(`Analysis #${id} completed.`);
     } catch (e: any) { setStage(0); setMessage(errorText(e)); }
