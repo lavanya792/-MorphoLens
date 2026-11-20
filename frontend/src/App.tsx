@@ -159,7 +159,7 @@ export default function App() {
     setBusy(true); setStage(1); setMessage("Uploading image and running segmentation…");
     try {
       const form = new FormData(); form.append("file", file);
-      const r = await axios.post(`${API}/api/upload/analyze`, form, { headers: { "Content-Type": "multipart/form-data" } });
+      const r = await axios.post(`${API}/api/api/upload/analyze`, form, { headers: { "Content-Type": "multipart/form-data" } });
       const id: number = r.data.analysis_id;
       setStage(2); setMessage(`Segmentation complete: ${r.data.total_nuclei} nuclei. Running analytics…`);
       await axios.post(`${API}/api/analytics/run/${id}`);
