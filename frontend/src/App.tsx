@@ -146,8 +146,8 @@ export default function App() {
   }
   async function loadAnalysis(id: number, changePage = true) {
     const [d, s] = await Promise.all([
-      axios.get(`${API}/api/dashboard/analysis/${id}`),
-      axios.get(`${API}/api/dashboard/stats`, { params: { analysis_id: id } })
+      axios.get(`${API}/api/api/dashboard/analysis/${id}`),
+      axios.get(`${API}/api/api/dashboard/stats`, { params: { analysis_id: id } })
     ]);
     setSelected(id); setDetails(d.data); setStats(s.data); setPick(null);
     if (changePage) setPage("analysis");
